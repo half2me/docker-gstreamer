@@ -29,8 +29,58 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
   libsoup2.4-dev \
   libshout3-dev \
   libpulse-dev \
-  libva-dev
-
+  libva-dev \
+  libxv-dev \
+  libalsa-ocaml-dev \
+  libcdparanoia-dev \
+  libopus-dev \
+  libpango1.0-dev \
+  libvisual-0.4-dev \
+  libvorbisidec-dev \
+  libaa1-dev \
+  libcaca-dev \
+  libdv4-dev \
+  libflac-dev \
+  libjack-dev \
+  libtag1-dev \
+  libdrm-dev \
+  libvpx-dev \
+  libwavpack-dev \
+  libass-dev \
+  libzbar-dev \
+  libx265-dev \
+  libx264-dev \
+  libwildmidi-dev \
+  libvulkan-dev \
+  libwayland-dev \
+  wayland-protocols \
+  libwebp-dev \
+  libwebrtc-audio-processing-dev \
+  libvdpau-dev \
+  ilbsrtp0-dev \
+  libvo-aacenc-dev \
+  libvo-amrwbenc-dev \
+  libbs2b-dev \
+  libdc1394-22-dev \
+  libdts-dev \
+  libfaac-dev \
+  libfaad-dev \
+  libfdk-aac-dev \
+  libfluidsynth-dev \
+  libcurl-ocaml-dev \
+  libgme-dev \
+  libgsm1-dev \
+  librtmp-dev \
+  libcurl-ocaml-dev \
+  libjpeg-turbo8-dev \
+  liba52-0.7.4-dev \
+  libcdio-dev \
+  libtwolame-dev \
+  libx264-dev \
+  libmpeg2-4-dev \
+  libsidplay1-dev \
+  gobject-introspection \
+  libudev-dev 
 
 # Fetch and build GStreamer
 RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstreamer/gstreamer && \
