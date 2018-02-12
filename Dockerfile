@@ -169,6 +169,7 @@ RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstrea
   git checkout $GST_VERSION && \
   ./autogen.sh \
   	--prefix=/usr \
+  	--disable-x11 \
     --disable-gtk-doc && \
   make -j`nproc` && \
   make install && \
