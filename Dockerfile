@@ -57,7 +57,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
   libwebp-dev \
   libwebrtc-audio-processing-dev \
   libvdpau-dev \
-  ilbsrtp0-dev \
+  libsrtp0-dev \
   libvo-aacenc-dev \
   libvo-amrwbenc-dev \
   libbs2b-dev \
