@@ -52,6 +52,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
   libx264-dev \
   libwildmidi-dev \
   libvulkan-dev \
+  libx11-dev \
   libwayland-dev \
   wayland-protocols \
   libwebp-dev \
