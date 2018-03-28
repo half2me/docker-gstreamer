@@ -53,6 +53,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
   libwildmidi-dev \
   libvulkan-dev \
   libx11-dev \
+  libxrandr-dev \
   libwayland-dev \
   wayland-protocols \
   libwebp-dev \
