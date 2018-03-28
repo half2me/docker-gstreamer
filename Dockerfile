@@ -18,6 +18,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
   build-essential \
   gettext \
   meson \
+  libavfilter-dev \
   libglib2.0-dev \
   libgirepository1.0-dev \
   libpthread-stubs0-dev \
