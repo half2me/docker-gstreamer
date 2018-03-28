@@ -88,7 +88,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstreamer/gstreamer && \
   cd gstreamer && \
   git checkout $GST_VERSION && \
-  meson build --prefix=/usr --buildtype=release && \
+  meson build --prefix=/usr --libdir=/usr/lib --buildtype=release && \
   ninja -C build -j `nproc` && \
   cd .. && \
   rm -rvf /gstreamer
@@ -97,7 +97,7 @@ RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstrea
 RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstreamer/gst-plugins-base && \
   cd gst-plugins-base && \
   git checkout $GST_VERSION && \
-  meson build --prefix=/usr --buildtype=release && \
+  meson build --prefix=/usr --libdir=/usr/lib --buildtype=release && \
   ninja -C build -j `nproc` && \
   cd .. && \
   rm -rvf /gst-plugins-base
@@ -106,7 +106,7 @@ RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstrea
 RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstreamer/gst-plugins-good && \
   cd gst-plugins-good && \
   git checkout $GST_VERSION && \
-  meson build --prefix=/usr --buildtype=release && \
+  meson build --prefix=/usr --libdir=/usr/lib --buildtype=release && \
   ninja -C build -j `nproc` && \
   cd .. && \
   rm -rvf /gst-plugins-good
@@ -115,7 +115,7 @@ RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstrea
 RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstreamer/gst-plugins-bad && \
   cd gst-plugins-bad && \
   git checkout $GST_VERSION && \
-  meson build --prefix=/usr --buildtype=release && \
+  meson build --prefix=/usr --libdir=/usr/lib --buildtype=release && \
   ninja -C build -j `nproc` && \
   cd .. && \
   rm -rvf /gst-plugins-bad
@@ -124,7 +124,7 @@ RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstrea
 RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstreamer/gst-plugins-ugly && \
   cd gst-plugins-ugly && \
   git checkout $GST_VERSION && \
-  meson build --prefix=/usr --buildtype=release && \
+  meson build --prefix=/usr  --libdir=/usr/lib --buildtype=release && \
   ninja -C build -j `nproc` && \
   cd .. && \
   rm -rvf /gst-plugins-ugly
@@ -133,7 +133,7 @@ RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstrea
 RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstreamer/gst-libav && \
   cd gst-libav && \
   git checkout $GST_VERSION && \
-  meson build --prefix=/usr --buildtype=release && \
+  meson build --prefix=/usr  --libdir=/usr/lib --buildtype=release && \
   ninja -C build -j `nproc` && \
   cd .. && \
   rm -rvf /gst-libav
@@ -142,7 +142,7 @@ RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstrea
 RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstreamer/gst-rtsp-server && \
   cd gst-rtsp-server && \
   git checkout $GST_VERSION && \
-  meson build --prefix=/usr --buildtype=release && \
+  meson build --prefix=/usr  --libdir=/usr/lib --buildtype=release && \
   ninja -C build -j `nproc` && \
   cd .. && \
   rm -rvf /gst-rtsp-server
@@ -151,7 +151,7 @@ RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstrea
 RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstreamer/gstreamer-vaapi && \
   cd gstreamer-vaapi && \
   git checkout $GST_VERSION && \
-  meson build --prefix=/usr --buildtype=release && \
+  meson build --prefix=/usr  --libdir=/usr/lib --buildtype=release && \
   ninja -C build -j `nproc` && \
   cd .. && \
   rm -rvf /gstreamer-vaapi
@@ -160,7 +160,7 @@ RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstrea
 RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstreamer/gst-python && \
   cd gst-python && \
   git checkout $GST_VERSION && \
-  meson build --prefix=/usr --buildtype=release && \
+  meson build --prefix=/usr  --libdir=/usr/lib --buildtype=release && \
   ninja -C build -j `nproc` && \
   cd .. && \
   rm -rvf /gst-python
