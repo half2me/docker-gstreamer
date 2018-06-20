@@ -1,6 +1,6 @@
 FROM ubuntu:rolling
 
-ARG GST_VERSION=1.14.1
+ARG GST_VERSION=1.14.0
 
 RUN apt-get -y update
 
@@ -85,7 +85,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
   libudev-dev \
   python3-pip \
   python3-gi \
-  python-gi-dev
+  python-gi-dev \
+  graphviz
 
 # Fetch and build GStreamer
 RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstreamer/gstreamer && \
