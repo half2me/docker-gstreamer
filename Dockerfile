@@ -89,7 +89,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
   python3-pip \
   python3-gi \
   python-gi-dev \
-  graphviz
+  graphviz \
+  libopencv-dev
 
 # Fetch and build GStreamer
 RUN git clone -b $GST_VERSION --depth 1 git://anongit.freedesktop.org/git/gstreamer/gstreamer && \
