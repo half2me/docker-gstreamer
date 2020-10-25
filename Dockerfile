@@ -1,6 +1,6 @@
 FROM ubuntu:rolling
 
-ARG GST_VERSION=1.16.2
+ARG GST_VERSION=1.18.0
 
 RUN apt-get -y update
 
